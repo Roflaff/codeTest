@@ -1,12 +1,15 @@
-# <center> BAEKJOON </center>
-<center>
+<div align="center">
+
+# BAEKJOON
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=ksp317)](https://solved.ac/ksp317/)
-</center>
-<hr>
-This folder contains a description of the solved problem and a code.
 
-<br>
+ > This folder contains a description of the solved problem and a code.
+
+</div>
+
+<hr>
+
 Folder struct is like
 
 ```
@@ -20,10 +23,9 @@ Folder struct is like
 ```
 <hr>
 
-# README Form
+# README.md Form
 
-## [ProblemNum]
-link : [![link]()](linkhere)
+## [ProblemNum] [LINK : 🔐](linkhere) 
 
 ## Problem
 
@@ -38,13 +40,37 @@ link : [![link]()](linkhere)
 <div style="display: flex;">
   <div style="width: 50%; padding: 10px; border-right: 1px solid black;">
 
-    Input 1
+#### Input 1
+
+    input here
 
   </div>
   
   <div style="width: 50%; padding: 10px;">
 
-    Output 1
+#### Output 1
+
+    ouput here
 
   </div>
+</div>
+
+<div style="display: flex;">
+  <div style="width: 50%; padding: 10px; border-right: 1px solid black;">
+
+#### Input 2
+
+    input here
+
+  </div>
+  
+  <div style="width: 50%; padding: 10px;">
+
+#### Output 2
+
+    ouput here
+
+  </div>
+  
+  asdf
 </div>
