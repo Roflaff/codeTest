@@ -33,4 +33,18 @@ link : [![link]()](linkhere)
 
 ## Limit
 
-## Ex Input 1 Ex Input 1
+## Ex
+
+<div style="display: flex;">
+  <div style="width: 50%; padding: 10px; border-right: 1px solid black;">
+
+    Input 1
+
+  </div>
+  
+  <div style="width: 50%; padding: 10px;">
+
+    Output 1
+
+  </div>
+</div>
