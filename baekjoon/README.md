@@ -7,7 +7,7 @@ This folder contains a description of the solved problem and a code.
 Folder struct is like
 
 ```
-📂 backjoon  
+📂 baekjoon  
 ├── 📂 000  
 │   └── 000.py
 │   └── 📄 README.md 
