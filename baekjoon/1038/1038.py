@@ -15,34 +15,35 @@ for i in range(10) :
 # Input
 N = int(input())
 
-find = 0
-
 def find_X(N, find) :
     N_i = 0 
     N_j = 0
     matrix_total = 0
     temp = 0
+    N = N
     find = find
     out = False
 
     for i in range(10) :
         # 현재 행의 크기 합
-        temp = np.sum(matrix[i]) - 1
+        temp = np.sum(matrix[i])
         matrix_total = matrix_total + temp
 
         # 못 찾을 경우 없는 수
         if N > np.sum(matrix):
             out = True
+            break
 
         # N이 해당 행보다 크면 다른 행에 N값 존재
-        if N > matrix_total :
-                pass
+        if N > matrix_total - 1:
+            pass
         else : 
             N_i = i
             find = matrix_total - temp
-            for j in range(10):
-                if N <= find + matrix[i, j] :
+            for j in range(i, 10):
+                if N < find + matrix[i, j] :
                     N_j = j
+                    find = N - find
                     break
                 find = find + matrix[i, j]
             break
@@ -60,7 +61,10 @@ if out is True:
 
 for i in range(I, -1, -1) :
     X = X + 10**I * J
-    find = N - find
+    if find == 0:
+        break
+    if i > 1 :
+        find = find + np.sum(matrix[:i-1])
     I, J, find, out = find_X(find, 0)
 
 print(X)
