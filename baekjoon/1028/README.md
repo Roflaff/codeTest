@@ -65,7 +65,8 @@ size 1:    size 2:    size 3:
 </div>
 
 <div>
-  <div>
+
+<div>
 
 #### Input 3
     4 4
@@ -82,6 +83,8 @@ size 1:    size 2:    size 3:
   </div>
 </div>
 
+<div>
+
 #### Input 4
     3 6
     111000
@@ -95,6 +98,8 @@ size 1:    size 2:    size 3:
     2
   </div>
 </div>
+
+
 
 <hr>
 
