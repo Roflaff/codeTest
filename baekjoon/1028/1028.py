@@ -83,15 +83,30 @@ def createDia(size) :
         for j in range(i):
             temp = temp + "0"
         
+        start = size + i - 1
         for k in range(lenth):
-            dia[size+i-1][k] = int(temp[k])
+            if i == 0 :
+                break
 
-    return dia
+            dia[start][k] = int(temp[k])
 
-print(createDia(5))
+    return dia, lenth
 
 # 다이아의 최대 크기는 R, C 에 영향을 받는다
 def findMaxDia(R, C, array, dia) :
     max_size = diaMaxSize(R, C)
+    
+    find = False
+    while find != True :
+        dia, lenth_dia = createDia(max_size)
+        split_arrays = [ [row[i:i+3] for row in array] for i in range(lenth_dia) ]
+        for I in range(R - lenth_dia) :
+            for J in range(C - lenth_dia) :
 
+        
     return max_size
+
+initSize = diaMaxSize(R, C)
+initDia = createDia(initSize)
+
+print(findMaxDia(R, C, array, initDia))
